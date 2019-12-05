@@ -204,7 +204,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="plugin.video.releaseBB" version="1.8.4" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+<addon id="plugin.video.releaseBB" version="1.8.5.2" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common" version="2.1.1"/>
@@ -228,8 +228,9 @@ Add-on by doko.
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
     <email>bugatsinho@protonmail.com</email>
-    <news>+ [B][COLOR lime]1.8.4[/B][/COLOR] [COLOR gold](30-08-2019)[/COLOR]
-- add cfscrape17.py to support  kodi 17.6 users</news>
+    <news>+ [B][COLOR lime]1.8.5.2[/B][/COLOR] [COLOR gold](01-12-2019)[/COLOR]
+- fix cfscrape to bypass cloudflare credits to openscrapers team
+- fix search function</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
@@ -366,7 +367,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.6.2" provider-name="Bugatsinho">
+<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.7" provider-name="Bugatsinho">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -390,8 +391,8 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <icon>icon.png</icon>
     <fanart>fanart.png</fanart>
   </assets>
-  <news>2.6.6.2 03-11-2019
-- Fix regex for the events and get key for decrypt website streams</news>
+  <news>2.6.7 02-12-2019
+- Fix Key error</news>
   </extension>
 </addon>
 
@@ -822,7 +823,7 @@ Added Trakt Manager
 	</extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="8.3.1" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="8.3.2" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodus" />
