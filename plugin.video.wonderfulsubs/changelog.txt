@@ -1,3 +1,9 @@
+[B]0.0.28[/B]
+- Add platform header [RedNinjaX]
+[B]0.0.27[/B]
+- Update User-Agent to fix playback
+[B]0.0.26[/B]
+- Fix playback
 [B]0.0.25[/B]
 - Add 'episode' mediatype to episode items [doko-desuka]
 [B]0.0.24[/B]
