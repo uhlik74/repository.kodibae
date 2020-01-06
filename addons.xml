@@ -207,7 +207,7 @@ A lot of existing add-ons already integrate with this service out-of-the-box.</d
     </extension>
 </addon>
 
-<addon id="plugin.video.releaseBB" version="1.8.5.2" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+<addon id="plugin.video.releaseBB" version="1.8.6" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common" version="2.1.1"/>
@@ -219,6 +219,7 @@ A lot of existing add-ons already integrate with this service out-of-the-box.</d
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary>Browse Release[COLOR orange][B]BB[/B][/COLOR]</summary>
     <description>Stream a wide selection of scene release movies and Tv shows from releaseBB....
@@ -231,9 +232,10 @@ A lot of existing add-ons already integrate with this service out-of-the-box.</d
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
     <email>bugatsinho@protonmail.com</email>
-    <news>+ [B][COLOR lime]1.8.5.2[/B][/COLOR] [COLOR gold](01-12-2019)[/COLOR]
-- fix cfscrape to bypass cloudflare credits to openscrapers team
-- fix search function</news>
+    <news>++ [B][COLOR lime]1.8.6[/B][/COLOR] [COLOR gold](03-01-2020)[/COLOR]
+- add foreign movies menu
+- fix search function to point titles link to old2.rlsbb domain
+- add service.py and make function to get the available RLSBB domains</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
@@ -475,7 +477,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.2" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.3" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -521,6 +523,18 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.3:
+Fixed backwards compatibility for older Seren list urls
+Movie titles now confirm against IMDB before scrape
+Stop triggering Oauth refresh on 401 errors
+Next up sort style now requires Trakt Auth
+All Debrid magnets are now removed from account after resolving is complete
+Fixed source size possibly displaying multiple times in resolver window
+Rescrape now only applies to initial playlist item
+Fixed ability to backout of Hide Item selection in Trakt manager
+Fixed Trakt lists with same name being mixed up
+Trakt list titles now also append the username
+
 Changelog 1.6.2:
 Fixed trakt database rebuild issues
 
@@ -732,7 +746,7 @@ Added Trakt Manager
 	</extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="8.3.5" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="8.3.6" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodus" />
@@ -1071,7 +1085,7 @@ v5.2.14 (2017-01-23)
 	</extension>
 </addon>
 
-<addon id="plugin.video.PLsportowo" name="Sportowa TV" version="1.8.9" provider-name="mbebe">
+<addon id="plugin.video.PLsportowo" name="Sportowa TV" version="1.9.1" provider-name="mbebe">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" />
